@@ -15,4 +15,5 @@ icp new <project-name> --subfolder <template-name>
 
 ## Templates:
 
-* Rust - A basic rust canister
+* motoko - A basic motoko canister
+* rust - A basic rust canister
