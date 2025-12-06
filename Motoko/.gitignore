@@ -10,5 +10,9 @@
 # environment variables
 .env
 
-# rust
-target/
+# motoko
+.mops
+*.wasm
+
+# icp-cli
+.icp/cache/
