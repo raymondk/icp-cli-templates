@@ -1,5 +1,5 @@
 [template]
 sub_templates = [
-  "Motoko",
-  "Rust",
+  "motoko",
+  "rust",
 ]

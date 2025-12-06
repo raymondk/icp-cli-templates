@@ -33,17 +33,16 @@ The [`src/main.mo`](./src/main.mo) file contains the Motoko canister implementat
 
 ## How It Works
 
-1. ICP-CLI uses the built-in `motoko` recipe resolver
-2. The resolver generates build steps that:
-   - Check for `moc` compiler availability
-   - Compile the Motoko source code using `moc`
-   - Move the resulting WASM to the output path
-3. The canister is built and ready for deployment
+1. ICP-CLI uses the built-in `motoko` recipe resolver this depends on [mops](https://cli.mops.one/), the Motoko package manager.
+2. The recipe is expanded into build steps that:
+   - check if mops is installed
+   - use the correct motoko toolchain to build the canister
+3. Once the canister is built, it is ready for deployment
 
 ## Prerequisites
 
-- Motoko compiler (`moc`) must be installed
-- Install via: <https://internetcomputer.org/docs/building-apps/getting-started/install>
+- Make sure you've followed the instructions to install [mops](https://cli.mops.one/) and
+that the mops toolchain has been initialized: `mops toolchain init`
 
 ## Use Cases
 
